@@ -4,9 +4,15 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+input,
+button,
+select,
+textarea {
   font-family: 'Poppins', sans-serif;
+}
 
+body {
   background-color: #e5e5e5;
 }
 
@@ -48,11 +54,75 @@ header p {
 }
 
 form {
-  background: #FAFAFC;
+  background: #fafafc;
 
   min-height: 300px;
 
   margin-top: 38px;
 
   border-radius: 8px 8px 0 0;
+  padding: 64px;
+}
+
+fieldset {
+  border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+fieldset legend {
+  font-family: 'Archivo';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  color: #32264d;
+
+  width: 100%;
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 16px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4e4958;
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 12px;
+  color: #a9a7af;
+}
+
+.input-wrapper label span:hover {
+  color: #6c6a71;
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+  background: #fafafc;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  height: 56px;
+  padding: 0 24px;
+
+  font-size: 16px;
+  line-height: 26px;
+  color: #6c6a71;
+}
+
+.input-wrapper textarea {
+  padding: 0;
+  height: 168px;
 }
